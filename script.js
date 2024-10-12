@@ -1,5 +1,5 @@
 function getWeather() {
-    const apiKey = 'YOUR-API-KEY';
+    const apiKey = 'e717f95d40a7b743e3507b7b88cc9075';
     const city = document.getElementById('city').value;
 
     if (!city) {
@@ -9,6 +9,7 @@ function getWeather() {
 
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+
 
     fetch(currentWeatherUrl)
         .then(response => response.json())
